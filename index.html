@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>3 Months With You ❤️</title>
+  <title> 💖Kỉ niệm 3 tháng💖</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
@@ -72,16 +72,16 @@
   <div class="floating-hearts" id="hearts"></div>
   <div class="card">
     <div id="step1">
-      <h1>Happy 3 Months ❤️</h1>
-      <p>Before we continue… one small puzzle 😉</p>
-      <p><b>Question 1:</b> Our anniversary number?</p>
-      <input id="q1" placeholder="Type your answer" />
+      <h1> Vậy là 3 tháng rùii</h1>
+      <p> Trước khi bắt đầuu... trả lời câu hỏi trước:>></p>
+      <p><b>Câu hỏi 1:</b> TThanh tỏ tình PNghi ngày máyy</p>
+      <input id="q1" placeholder="Điền đáp án:>" />
       <br />
       <button onclick="checkQ1()">Next</button>
     </div>
 
     <div id="step2" class="hidden">
-      <p><b>Question 2:</b> Who loves more? (Hint: you 😌)</p>
+      <p><b>Câu hỏi 2:</b> TThanh có iu PNghi hogg</p>
       <input id="q2" placeholder="Type your answer" />
       <br />
       <button onclick="checkQ2()">Next</button>
@@ -97,23 +97,23 @@
   <script>
     function checkQ1() {
       const ans = document.getElementById('q1').value.trim();
-      if (ans === '3' || ans.toLowerCase().includes('three')) {
+      if (ans === '18/9') {
         document.getElementById('step1').classList.add('hidden');
         document.getElementById('step2').classList.remove('hidden');
       } else {
-        alert('Try again 😘');
+        alert('>:((( trả lời đúngg coi');
       }
     }
 
     function checkQ2() {
       const ans = document.getElementById('q2').value.toLowerCase();
-      if (ans.includes('you')) {
+      if (ans.includes('có')) {
         document.getElementById('step2').classList.add('hidden');
         document.getElementById('step3').classList.remove('hidden');
         document.getElementById('message').innerText = 
-          "These 3 months with you mean more to me than I can explain. Thank you for choosing me, staying with me, and loving me. I hope we celebrate not just months, but years together ❤️";
+          "Cảm ơn em đã đến đây yêu anh:>> ❤️";
       } else {
-        alert('Hmm… think again 😏');
+        alert('sai gòi iu nhìu luôn mới đúm');
       }
     }
   </script>
