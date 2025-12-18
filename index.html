@@ -65,12 +65,15 @@
   </style>
 </head>
 <body>
-  <audio id="bgm" autoplay loop>
+  <audio id="bgm" loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
 
   <div class="floating-hearts" id="hearts"></div>
   <div class="card">
+    <button id="startBtn" onclick="startMusic()">
+  💖 PNghi iuu ơi 💖
+</button>
     <div id="step1">
       <h1>Vậy là 3 tháng rùii</h1>
       <p>Trước khi bắt đầuu... trả lời câu hỏi trước:>></p>
@@ -95,6 +98,12 @@
   </div>
 
   <script>
+    function startMusic() {
+  const music = document.getElementById('bgm');
+  music.play();
+  document.getElementById('startBtn').style.display = 'none';
+}
+
     function checkQ1() {
       const ans = document.getElementById('q1').value.trim();
       if (ans === '18/9') {
@@ -111,7 +120,7 @@
         document.getElementById('step2').classList.add('hidden');
         document.getElementById('step3').classList.remove('hidden');
         document.getElementById('message').innerText = 
-          "Cảm ơn em đã đến đây yêu anh. Những ngày qua tuy chúng mình cũng có nhiều lần khó chịu cọc cằn nhưng cảm ơn em vì vẫn ở đây. Cảm ơn em đã bỏ qua những điểm sai của anh. Thời gian trôi qua cũng nhanh thật đáy:> chưa gì cx đã 3 tháng ròi. Chúc emm sau hnay ngày càng xinh đẹp, ngoan hiền, quản lý được cảm xúc của bản thân, học giỏi hơn và yêu anh hơn nhaa:Đ Anh yêu em - Tan Thanhh ❤️";
+          "Cảm ơn em đã đến đây yêu anh. Những ngày qua tuy chúng mình cũng có nhiều lần khó chịu cọc cằn nhưng cảm ơn em vì vẫn ở đây. Cảm ơn em đã bỏ qua những điểm sai của anh. Thời gian trôi qua cũng nhanh thật đáy:> chưa gì cx đã 3 tháng ròi. Chúc emm sau hnay ngày càng xinh đẹp, ngoan hiền, quản lý được cảm xúc của bản thân, học giỏi hơn và yêu anh hơn nhaa:D. Anh xin lõi anh hog viết nhiều đc như lần trước vì giới hạn code nên mong em đừngg chê Anh yêu em - Tan Thanhh ❤️";
       } else {
         alert('sai gòi iu nhìu luôn mới đúm');
       }
